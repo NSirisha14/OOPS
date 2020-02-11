@@ -10,6 +10,15 @@ public class lockDoor extends Door implements IlockDoor {
     }
 
     @Override
+    public void open() {
+        System.out.println("open");
+    }
+    public void close()
+    {
+        System.out.println("close");
+    }
+
+    @Override
     public void lock() {
         System.out.println("lock");
     }
@@ -24,3 +33,4 @@ public class lockDoor extends Door implements IlockDoor {
         System.out.println("unLock with password");
     }
 }
+

@@ -1,4 +1,4 @@
-class Door 
+abstract class Door 
 {
  private double length;
  private double breadth;
@@ -22,16 +22,9 @@ class Door
   {
    return width;
    }
+abstract public void open();
+abstract public void close();
 }
  
-interface Idoor
-{
-  
-  public void open();
-  public void close();
-}
-interface IlockDoor
-{
-public void Lock();
-public void UnLock();
-}
+
+
